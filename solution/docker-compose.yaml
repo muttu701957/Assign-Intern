@@ -15,3 +15,14 @@ services:
     ports:
       - "9393:9300"
  
+
+  prometheus:
+    image: prom/prometheus:v2.45.2
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+
