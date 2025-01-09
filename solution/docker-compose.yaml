@@ -1,0 +1,17 @@
+version: '3'
+services:
+  csvserver:
+    image: infracloudio/csvserver:latest
+    environment:
+      - CSV_SERVER_HOST=0.0.0.0
+      - CSV_SERVER_PORT=9393
+      - CSV_SERVER_DB_URL=jdbc:mysql://localhost:3306/csv_db
+      - CSV_SERVER_DB_USER=root
+      - CSV_SERVER_DB_PASSWORD=Mritunjaymarigoudar@12345
+      - CSV_SERVER_LOG_LEVEL=info
+      - CSVSERVER_BORDER=Orange
+    volumes:
+      - ./inputFile:/csvserver/inputdata
+    ports:
+      - "9393:9300"
+ 
