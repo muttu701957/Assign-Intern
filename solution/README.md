@@ -39,3 +39,19 @@ README.md  gencsv.sh  inputFile  part-1-cmd  part-1-logs  part-1-output
 http://localhost:9393
 
 ![image](https://github.com/user-attachments/assets/3a18cf70-c43e-4592-9580-7729fb277383)
+
+## create docker-compose.yaml file 
+(Put the content in docker-compose.yaml file)
+ docker-compose down  # Stop any running containers
+ docker-compose up -d --build  # Rebuild and restart the containers with the updated configuration
+
+ ## create prometheus.yml file and also update in docker-compose.yaml file
+ docker-compose down  # Stop any running containers
+ docker-compose up -d --build  # Rebuild and restart the containers with the updated configuration
+
+ http://localhost:9090
+
+ ## Prometheus output image
+ 
+![image](https://github.com/user-attachments/assets/374be727-919e-4fb9-a2a9-12a230c28978)
+
