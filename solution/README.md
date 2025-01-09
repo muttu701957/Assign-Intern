@@ -46,6 +46,7 @@ http://localhost:9393
  docker-compose up -d --build  # Rebuild and restart the containers with the updated configuration
 
  ## create prometheus.yml file and also update in docker-compose.yaml file
+ (Put the updated content in docker-compose.yaml file includes prometheus)
  docker-compose down  # Stop any running containers
  docker-compose up -d --build  # Rebuild and restart the containers with the updated configuration
 
